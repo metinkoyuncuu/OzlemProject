@@ -1,5 +1,5 @@
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube, FaInstagram, FaWhatsapp } from "react-icons/fa";
-
+// Sadece Instagram ve Whatsapp kalacak
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 const BotBar = () => {
   return (
     <div className="w-full bg-theme-blue text-white py-4 relative z-20">

@@ -1,4 +1,4 @@
-import { FaFacebookF, FaThumbsUp, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import {  FaThumbsUp, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Header from "../sections/Header";
 import PageTitle from "../components/PageTitle";

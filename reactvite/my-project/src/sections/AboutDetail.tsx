@@ -1,4 +1,4 @@
-import { FaFacebookF, FaThumbsUp } from "react-icons/fa";
+import {  FaThumbsUp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6"; // X ikonu için (react-icons paketini güncellemen gerekebilir, yoksa FaTwitter kullan)
 
 const AboutDetail = () => {

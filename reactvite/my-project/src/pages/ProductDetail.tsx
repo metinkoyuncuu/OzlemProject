@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { FaFacebookF, FaThumbsUp, FaTimes, FaChevronLeft, FaChevronRight } from "react-icons/fa"; // Ok ikonlarını ve çarpıyı ekledik
+import {  FaThumbsUp, FaTimes, FaChevronLeft, FaChevronRight } from "react-icons/fa"; // Ok ikonlarını ve çarpıyı ekledik
 import { FaXTwitter } from "react-icons/fa6";
 import Header from "../sections/Header";
 import PageTitle from "../components/PageTitle";
