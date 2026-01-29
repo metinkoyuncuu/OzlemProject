@@ -15,12 +15,10 @@ const Header = () => {
       <div className="bg-theme-blue w-full h-[46px] relative z-1 shadow-sm border-b border-white/10">
         <div className="container mx-auto max-w-[1140px] px-4 h-full flex justify-between items-center relative">
           
-          {/* Logo arkasına denk gelen boşluk */}
           <div className="hidden lg:block w-[280px]"></div>
 
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-[10px] md:text-xs text-white font-medium tracking-wide opacity-90 whitespace-nowrap hidden sm:block">
-                        Emirgan Mah. Reşitpaşa Posta Yolu Cad. No: 49 Sarıyer / İSTANBUL (0212) 277 60 74 - (0212) 229 04 34
-
+            Emirgan Mah. Reşitpaşa Posta Yolu Cad. No: 49 Sarıyer / İSTANBUL (0212) 277 60 74 - (0212) 229 04 34
           </div>
 
           <div className="flex items-center gap-3 md:gap-4 text-xs text-white ml-auto lg:ml-0">
@@ -32,27 +30,23 @@ const Header = () => {
       </div>
 
       {/* --- NAVBAR --- */}
-      {/* mt değerlerini kaldırdık, artık direkt TopBar'ın altına yapışık */}
       <div className="w-full relative z-1000">
         <div className="container mx-auto max-w-[1340px] px-4">
             
-            {/* Arkaplan Barı (Glassmorphism) */}
             <div className="bg-black/60 backdrop-blur-md rounded-b-xl lg:rounded-xl shadow-2xl border border-white/10 px-4 lg:px-8 py-0 lg:h-[90px] flex items-center justify-between relative">
 
-                {/* --- LOGO ALANI (ÜSTE YAPIŞIK & TAŞAN) --- */}
+                {/* LOGO */}
                 <div className="relative z-50 self-start">
                     <Link 
                         to="/" 
                         className="absolute -top-[25px] lg:-top-[46px] left-0 bg-white w-[140px] h-[60px] lg:w-[260px] lg:h-[110px] rounded-b-[20px] lg:rounded-[30px] shadow-[0_8px_25px_rgba(0,0,0,0.3)] flex items-center justify-center overflow-hidden group hover:pt-2 transition-all duration-300"
                     >
-                        {/* Logo Görseli */}
                         <img 
                             src="/logo.jpeg" 
                             alt="Beşkardeşler İnşaat Logo" 
                             className="w-full h-full object-cover" 
                         />
                     </Link>
-                    {/* Hizalama için görünmez kutu */}
                     <div className="w-[140px] lg:w-[260px] h-[1px]"></div>
                 </div>
 
@@ -66,17 +60,31 @@ const Header = () => {
                     <NavItem to="/iletisim" icon={<FaEnvelope />} text="İLETİŞİM" active={isActive("/iletisim")} />
                 </nav>
 
-                {/* SAĞ TARAF (MOBİL BUTON & TELEFON) */}
-                <div className="flex items-center gap-4 ml-auto lg:ml-0">
+                {/* SAĞ TARAF */}
+                <div className="flex items-center gap-3 ml-auto lg:ml-0">
                     
-                    {/* MOBİL MENÜ BUTONU */}
-                    <div className="lg:hidden">
-                        <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="text-white text-2xl p-2 bg-theme-blue rounded border border-white/20">
+                    {/* --- MOBİL BUTONLAR (DÜZELTİLDİ) --- */}
+                    <div className="lg:hidden flex items-center gap-2">
+                        
+                        {/* YENİ HEMEN ARA BUTONU: MAVİ & YAZILI */}
+                        <a 
+                           href="tel:05357245786" 
+                           className="flex items-center gap-2 bg-theme-blue text-white px-4 py-2 rounded shadow-md border border-white/10 active:scale-95 transition-transform"
+                        >
+                            <FaPhoneAlt className="text-sm animate-pulse" />
+                            <span className="text-[11px] font-bold tracking-wider whitespace-nowrap">ALO MOLOZ</span>
+                        </a>
+
+                        {/* HAMBURGER MENÜ */}
+                        <button 
+                            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} 
+                            className="text-white text-xl p-2.5 bg-white/10 rounded border border-white/20 hover:bg-theme-blue transition-colors"
+                        >
                             {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
                         </button>
                     </div>
 
-                    {/* TELEFON (Masaüstü) */}
+                    {/* MASAÜSTÜ İÇİN TELEFON */}
                     <div className="hidden lg:block">
                         <a href="tel:05357245786" className="flex items-center gap-3 bg-theme-blue text-white px-6 py-2.5 rounded-full hover:bg-white hover:text-theme-blue transition-all duration-300 shadow-lg group border border-white/10">
                             <FaPhoneAlt className="text-sm group-hover:rotate-12 transition-transform" />
@@ -112,8 +120,7 @@ const Header = () => {
   );
 };
 
-// --- YARDIMCI BİLEŞENLER ---
-
+// --- YARDIMCI BİLEŞENLER AYNI ---
 const SocialIcon = ({ icon, href }: { icon: any, href: string }) => (
     <a href={href} target="_blank" rel="noopener noreferrer" className="w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-white hover:text-theme-blue transition-all duration-300">
         {icon}

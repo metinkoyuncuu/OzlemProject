@@ -5,15 +5,19 @@ import ProductsPage from "./pages/ProductsPage";
 import ProductDetail from "./pages/ProductDetail";
 import ServicesPage from "./pages/ServicesPage";
 import ServiceDetail from "./pages/ServiceDetail";
-import ContactPage from "./pages/ContactPage"; // Yeni
+import ContactPage from "./pages/ContactPage"; 
 import ReferencesPage from "./pages/ReferencesPage";
-// import ScrollToTop from "./utils/ScrollToTop";
+import FloatingCallButton from "./components/FloatingCallButton"; // <-- 1. IMPORT ET
 
 function App() {
   return (
     <>
+      {/* ScrollToTop varsa kalabilir */}
       {/* <ScrollToTop /> */}
       
+      {/* 2. BUTONU BURAYA KOY (Routes'un dışında) */}
+      <FloatingCallButton />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/anasayfa" element={<Home />} />
@@ -27,7 +31,6 @@ function App() {
         <Route path="/hizmetler/:id" element={<ServiceDetail />} />
         <Route path="/referanslar" element={<ReferencesPage />} />
 
-        {/* İletişim Sayfası */}
         <Route path="/iletisim" element={<ContactPage />} />
       </Routes>
     </>
