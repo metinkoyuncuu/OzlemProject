@@ -5,34 +5,36 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 const slides = [
   {
     id: 1,
-    image: "/uzaktan-bina-ykm-makinas-p47b8hoih6j38947rj68f3l8fmhej634700rh00z8w.jpg",
+    image: "/ilkhero.jpeg",
+    title: "Nakliye ve Taşımacılık",
+    subtitle: "Geniş araç filosu ve tecrübeli kadro ile güvenli taşıma."
+  },
+    {
+    id: 2,
+    image: "/ikincihero.jpeg",
+    title: "Moloz ve Hafriyat Dökümü",
+    subtitle: "İnşaat atıklarınızı, moloz ve hafriyatlarınızı çuvallı çuvalsız alıyoruz."
+  },
+  {
+    id: 3,
+    image: "/ucuncuhero.jpeg",
     title: "Bina Yıkım ve Enkaz Kaldırma",
     subtitle: "Yıkım, hafriyat ve nakliyat işlerini büyük bir titizlikle yürütüyoruz."
   },
   {
-    id: 2,
+    id: 4,
     image: "/iskandinav-tarzi-ev-dekorasyonu-ornekleri-p47blr6ix0or25umb9kplr3e7d3v5eqrcnff9kczg0.jpg",
     title: "Dekorasyon ve Tasarım",
     subtitle: "Lüks ve modern tasarımlarla yaşam ortamınızın kalitesini artırıyoruz."
   },
   {
-    id: 3,
+    id: 5,
     image: "/manset-1-p46m767t48oyh2bytxktijleakytnjwxlvzh18f5o0.jpg",
     title: "İnşaat ve Proje İşleri",
     subtitle: "Avm, oteller, hastaneler ve yaşam alanlarının mimarıyız."
   },
-  {
-    id: 4,
-    image: "/kartal-1024x404-1-p47bbgu44alrzsskdthpbcjs5jt8wnwilqe46jm3jk.jpg",
-    title: "Nakliye ve Taşımacılık",
-    subtitle: "Geniş araç filosu ve tecrübeli kadro ile güvenli taşıma."
-  },
-  {
-    id: 5,
-    image: "/molozhafriyat-p47c1juvrsb868wl2le009l9lh8xiagd6u46lyxsvk.jpg",
-    title: "Moloz ve Hafriyat Dökümü",
-    subtitle: "İnşaat atıklarınızı, moloz ve hafriyatlarınızı çuvallı çuvalsız alıyoruz."
-  },
+  
+
 ];
 
 const Hero = () => {

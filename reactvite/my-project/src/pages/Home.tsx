@@ -16,13 +16,14 @@ const Home = () => {
       <Header />
       <Hero />
       <Intro />
+       <BrandSlider />
       <Services />
       
       {/* Hakkımızda Bölümü */}
       <About />
       
       {/* YENİ REFERANS SLIDER'I (About ile ContactMap arasında) */}
-      <BrandSlider />
+     
 
       <ContactMap />
       <Footer />
