@@ -60,7 +60,7 @@ const servicesDatabase = [
       "Oteller, hastaneler, okullar, alış veriş merkezleri, iş yerleri, evler vb. yerlerdeki iç tadilat ve dekorasyonların sağlanması için yıkım ve hafriyat işleri de tarafımızdan yürütülmektedir. 30 kg’lık moloz çuvallarıyla, ekibimiz tarafından çuvallanan molozlar uzaman ekibimiz sayesinde araçlarla nakliye edilmektedir.",
       "Moloz ve inşaat hafriyatının yüklenmesi ve nakliye edilmesi konusunda geniş araç parkımız ve uzman ve deneyimli kadromuzla hizmetinizdeyiz…",
       "Çuvallı ve çuvalsız her türlü molozlarınızın atılması için 7/24 saat açık Alo Moloz Hattı‘nı arayabilirsiniz.",
-      "<b> Alo Moloz Hattı İrtibat Telefonları: (0535) 724 57 86 – (0536) 367 6134 </b>",
+      "<b> Alo Moloz Hattı İrtibat Telefonları: (0535) 724 57 86 – (0551) 010 23 39 </b>",
       "<b><u>Önemli Bilgi:</u></b> <b> 5326 sayılı Kabahatler Kanunu</b> ‘nun 41-4 maddesi gereğince, inşaat atık ve artıklarını, bunların toplanması ve depolanmasına ait yerler dışına atan kişilere <b>143 TL</b> ile <b> 4 bin 355 TL </b> arasında para cezası verilmektedir."
     ]
   },
